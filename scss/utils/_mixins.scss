@@ -1,18 +1,18 @@
 @use "./../utils/variables" as vars;
 
-@mixin flex-row($justify: start, $align: flex-start, $gap: 1rem) {
+@mixin flex-row() {
   display: flex;
   flex-direction: row;
-  justify-content: $justify;
-  align-items: $align;
+  justify-content: space-between;
+  align-items: center;
   gap: $gap;
 }
 
-@mixin flex-column($justify: start, $align: flex-start, $gap: 1rem) {
+@mixin flex-column() {
   display: flex;
   flex-direction: column;
-  justify-content: $justify;
-  align-items: $align;
+  justify-content: flex-start;
+  align-items: start;
   gap: $gap;
 }
 
