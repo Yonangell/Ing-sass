@@ -17,7 +17,7 @@
   }
 
   .titulo-mobile {
-    color: #f5f5f5;
+    color: vars.$secondary-color;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 40px 1rem;
+  padding: 20px 1rem;
   border-bottom: 1.5px solid rgb(54, 54, 54);
   gap: 0.1rem;
 
@@ -54,7 +54,7 @@
   }
 
   .titulo-d {
-    color: #f5f5f5;
+    color: vars.$secondary-color;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -70,7 +70,7 @@
   align-items: flex-start;
 
   .titu-h3 {
-    color: #f5f5f5;
+    color: vars.$secondary-color;
     font-size: 14px;
     font-weight: normal;
     text-align: center;
@@ -80,20 +80,23 @@
     padding-bottom: 10px;
     white-space: nowrap;
   }
+}
 
-  .h3-deskop {
-    display: inline-block;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: flex-start;
-    color: #f5f5f5;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
-    margin: 0;
-    overflow: 0;
-    padding: 0;
-  }
+.hh3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: vars.$gap-size;
+}
+
+.h3-deskop {
+  color: vars.$secondary-color;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  overflow: 0;
+  padding: 0;
 }
 
 .h4 {
@@ -119,11 +122,11 @@
 }
 
 .titulo-h4 {
-  color: #f5f5f5;
+  color: vars.$secondary-color;
   font-size: 14px;
   line-height: 1rem;
   font-family: vars.$font-stack;
-  font-weight: 400;
+  font-weight: vars.$font-weight;
 }
 
 .btn-lin {
@@ -131,32 +134,224 @@
   cursor: pointer;
 
   .h3-link {
-    color: #f5f5f5;
+    color: vars.$secondary-color;
     font-size: 14px;
     font-family: vars.$font-stack;
-    font-weight: 400;
+    font-weight: vars.$font-weight;
     padding-left: 0.2rem;
   }
 }
 
-.boton-grande {
-  display: block;
-//   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.boton-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-self: auto;
+  position: static;
   gap: 0.5rem;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0;
 
   .span {
-    color: #f5f5f5;
-    font-weight: 400;
+    color: vars.$secondary-color;
+    font-weight: vars.$font-weight;
     text-align: center;
     font-size: 14px;
     font-family: vars.$font-stack;
-    display: block;
-    height: 100%;
   }
 
-  
+  .mensaje {
+    color: vars.$secondary-color;
+    font-weight: vars.$font-weight;
+    text-align: center;
+    font-size: 14px;
+    font-family: vars.$font-stack;
+  }
+}
+
+.imagen {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  position: relative;
+  gap: vars.$gap-size;
+
+  .img-h4 {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #25292e;
+    }
+
+    .estu-h4 {
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .condi {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border: 4px solid #25292e;
+      border-radius: 50%;
+    }
+
+    .condi-h4 {
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .rese {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border: 4px solid #25292e;
+      border-radius: 50%;
+    }
+
+    .rese-h4 {
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border: 4px solid #25292e;
+      border-radius: 50%;
+    }
+
+    .promo-h4 {
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #25292e;
+    }
+
+    .video-h4 {
+      color: vars.$secondary-color;
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .desarro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #25292e;
+    }
+
+    .desarro-h4 {
+      color: vars.$secondary-color;
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      font-weight: vars.$font-weight;
+    }
+  }
+
+  .evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 66px;
+      height: 66px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #25292e;
+    }
+
+    .evento-h4 {
+      color: vars.$secondary-color;
+      font-size: 12px;
+      font-family: vars.$font-stack;
+      font-weight: vars.$font-weight;
+    }
+  }
+}
+
+.enla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  gap: 8rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .enla-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .enla-a {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+  }
 }

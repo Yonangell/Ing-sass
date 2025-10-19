@@ -1,0 +1,24 @@
+@use "./../utils/variables" as vars;
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: $gap;
+}
+
+@mixin flex-grid() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, fr);
+    gap: vars.$gap-size
+}

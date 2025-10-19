@@ -1,0 +1,14 @@
+@use "./../utils/variables" as vars;
+@use "./../utils/mixins" as mix;
+
+.aside-pie {
+   @include mix.flex-row();
+   border-top: 1.5px solid red;
+    
+
+    .div-pie {
+       position: sticky;
+       bottom: 0;
+       z-index: 10;
+    }
+}

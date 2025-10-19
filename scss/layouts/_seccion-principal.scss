@@ -1,0 +1,18 @@
+@use "./../utils/variables" as vars;
+@use "./../utils/mixins" as mix;
+
+.seccion-principal {
+    @include mix.flex-grid(center, center);
+    // display: grid;
+    // grid-template-rows: repeat(1, 1fr);
+    // grid-template-rows: repeat(1, 1fr);
+    // gap: vars.$gap-size;
+    // padding: 20px 20px;
+    
+   
+
+    .seccion-imagen {
+        width: 30%;
+        height: 30%;
+    }
+}
