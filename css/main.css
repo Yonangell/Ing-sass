@@ -8,6 +8,11 @@ body {
   height: 100vh;
 }
 
+.principal,
+.envoltura {
+  min-height: 100%;
+}
+
 body {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #000000;
@@ -391,4 +396,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.seccion-principal .seccion-imagen {
+  width: 30%;
+  height: 30%;
 }/*# sourceMappingURL=main.css.map */
