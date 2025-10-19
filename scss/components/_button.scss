@@ -1,22 +1,53 @@
 .btn-volver {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-option {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-color {
-    background-color: #4a5df9;
-    border: none;
-    padding: 10px 80px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #4a5df9;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-sincolor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #25292e;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(54, 60, 68, 1);
+    transition: transform 0.2s;
   }
+}
+
+.btn-cuenta {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #25292e;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: rgb(54, 60, 68, 1);
+    transition: transform 0.2s;
+  }
+}
