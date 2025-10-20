@@ -2,17 +2,21 @@
 @use "./../utils/mixins" as mix;
 
 .seccion-principal {
-    @include mix.flex-grid();
-    // display: grid;
-    // grid-template-rows: repeat(1, 1fr);
-    // grid-template-rows: repeat(1, 1fr);
-    // gap: vars.$gap-size;
-    // padding: 20px 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    // padding: 0px 0px;
+    // margin: 0px 0px;
     
-   
+    
+    .imagen-seccion {
+        @include mix.flex-grid();
+        width: 100%;
+        height: 100%;
+    }
 
     .seccion-imagen {
-        width: 30%;
-        height: 30%;
+        width: 200px;
+        height: 200px;
     }
 }
