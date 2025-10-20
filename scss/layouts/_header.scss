@@ -346,3 +346,9 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .cabecera-mobile {
+    display: none;
+  }
+}

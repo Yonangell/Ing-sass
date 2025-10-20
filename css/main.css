@@ -392,6 +392,11 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .cabecera-mobile {
+    display: none;
+  }
+}
 .aside-pie {
   position: sticky;
   bottom: 0;
@@ -408,6 +413,11 @@ body {
   padding: 10px 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .aside-pie {
+    display: none;
+  }
+}
 .seccion-principal {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
