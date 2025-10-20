@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: $gap;
+  gap: vars.$gap-size;
 }
 
 @mixin flex-column() {
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  gap: $gap;
+  gap: vars.$gap-size
 }
 
 @mixin flex-grid() {

@@ -79,6 +79,7 @@ body {
   top: 0;
   z-index: 10;
   border-bottom: 1.5px solid rgb(54, 54, 54);
+  background-color: #000000;
 }
 .cabecera-mobile .h1 {
   flex: 1;
@@ -377,18 +378,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-left: 4rem;
-  gap: 8rem;
+  gap: 1rem;
+  padding-bottom: 0px;
 }
 .enla a {
   text-decoration: none;
-}
-.enla .enla-a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 .enla .enla-a {
   width: 32px;
@@ -398,6 +392,28 @@ body {
   cursor: pointer;
 }
 
+.aside-pie {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1.5px solid rgb(54, 54, 54);
+  background-color: #000000;
+}
+.aside-pie .div-pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 20px;
+}
+
+.seccion-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, fr);
+  gap: 1rem;
+}
 .seccion-principal .seccion-imagen {
   width: 30%;
   height: 30%;

@@ -2,13 +2,14 @@
 @use "./../utils/mixins" as mix;
 
 .aside-pie {
-   @include mix.flex-row();
-   border-top: 1.5px solid red;
-    
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1.5px solid rgb(54, 54, 54, 1);
+  background-color: #000000;
 
-    .div-pie {
-       position: sticky;
-       bottom: 0;
-       z-index: 10;
-    }
+  .div-pie {
+   @include mix.flex-row();
+   padding: 10px 20px;
+  }
 }
