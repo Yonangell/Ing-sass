@@ -6,16 +6,45 @@
 }
 
 
+   principal {
+    padding: 0 0;
+  padding: 0 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: vars.$gap-size;
+}
+
 .div-logo {
     display: flex;
   flex-direction: column;
+
+}
+.hh3 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.2rem;  
   padding-top: 10px;
   padding-left: 20px ;
+  gap: vars.$gap-size;
+  max-width: 50%;
+  margin-top: 0.75rem;
+}
 
-   .logo-header {
+.div-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  margin: 1rem 1rem 0 0;
+}
+   
+  .logo-header {
     width: 77px;
     height: 77px;
     border-radius: 50%;
@@ -23,26 +52,26 @@
     object-fit: cover;
   }
 
-  
-
-  .titu-h3 {
-    color: vars.$secondary-color;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
-    margin: 0;
-    overflow: 0;
-    padding-top: 0;
-    padding-bottom: 10px;
-    white-space: nowrap;
-  }
-
+  .tutlo-d {
   .titulo-d {
     color: vars.$secondary-color;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 0;
-    
+  }
+
+  .titu-h3 {
+    display: none;
+  }
+  }
+
+@media only screen and (max-width: 768px) {
+  .titu-h3 {
+    color: vars.$secondary-color;
+    font-size: 14px;
+
+    padding-bottom: 10px;
+    white-space: nowrap;
   }
 }
