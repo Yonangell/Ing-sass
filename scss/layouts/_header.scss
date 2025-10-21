@@ -98,7 +98,7 @@
   text-align: center;
   margin: 0;
   overflow: 0;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 0.5rem 1rem;
 }
 
 .titu-h3 {
@@ -168,6 +168,7 @@
   height: 100%;
   position: relative;
   gap: 0.2rem;
+  padding-bottom: 1rem;
 
   .img-h4 {
     display: flex;

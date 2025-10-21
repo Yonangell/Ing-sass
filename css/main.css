@@ -172,7 +172,7 @@ body {
   text-align: center;
   margin: 0;
   overflow: 0;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 0.5rem 1rem;
 }
 
 .titu-h3 {
@@ -239,6 +239,7 @@ body {
   height: 100%;
   position: relative;
   gap: 0.2rem;
+  padding-bottom: 1rem;
 }
 .imagen .img-h4 {
   display: flex;
@@ -441,6 +442,7 @@ body {
 }
 .principal {
   padding: 0 0;
+  border-bottom: 1.5px solid rgb(54, 54, 54);
 }
 
 .seccion-principal {
@@ -459,4 +461,48 @@ body {
 .seccion-principal .seccion-imagen {
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    background-color: #000000;
+    padding: 1rem 1rem;
+  }
+  footer .footer-pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  footer .footer1-a {
+    display: inline;
+    text-decoration: none;
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  footer .footer1-a:hover {
+    text-decoration: underline;
+  }
+  footer .footer2-a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  footer .footer2-a:hover {
+    text-decoration: underline;
+  }
+  footer p {
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
