@@ -2,6 +2,10 @@
 
 @media only screen and (min-width: 768px) {
   .envoltura {
-    @include mix.flex-column();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 }

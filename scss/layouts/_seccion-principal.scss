@@ -22,19 +22,18 @@
 
 @media only screen and (min-width: 768px) {
   .seccion-principal {
-    display: flex;
+    // display: flex;
     width: 100%;
     height: 100%;
 
     .imagen-seccion {
     @include mix.flex-grid();
-    width: 100%;
-    height: 100%;
+    
   }
 
   .seccion-imagen {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 
   }
