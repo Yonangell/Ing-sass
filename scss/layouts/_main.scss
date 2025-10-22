@@ -1,0 +1,10 @@
+@use "./../utils/mixins" as mix;
+
+@media only screen and (min-width: 768px) {
+    main {
+        @include mix.flex-row();
+        height: 100%;
+        width: 100%;
+    }
+
+}
