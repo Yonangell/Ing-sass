@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 768px) {
     main {
-        @include mix.flex-row();
+        display: flex;
         height: 100%;
         width: 100%;
     }

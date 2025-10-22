@@ -24,14 +24,14 @@
   }
 
   .barra-lateral {
+    // display: inline-block;
+    justify-content: start;
+    align-items: start;
     background-color: #000000;
     border-right: 1.5px solid rgb(54, 54, 54, 1);
-
-    .lateral {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: end;
-    }
   }
+
+  .lateral {
+      @include mix.flex-column();
+    }
 }

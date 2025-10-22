@@ -136,14 +136,17 @@ body {
     display: none;
   }
   .barra-lateral {
+    justify-content: start;
+    align-items: start;
     background-color: #000000;
     border-right: 1.5px solid rgb(54, 54, 54);
   }
-  .barra-lateral .lateral {
+  .lateral {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 1rem;
   }
 }
 .principal {
@@ -749,6 +752,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .seccion-principal {
+    display: flex;
     width: 100%;
     height: 100%;
   }
@@ -763,44 +767,43 @@ body {
     height: 200px;
   }
 }
-@media only screen and (min-width: 768px) {
-  footer {
-    background-color: #000000;
-    padding: 1rem 1rem;
-  }
-  footer .footer-pie {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-  }
-  footer .footer1-a {
-    display: inline;
-    text-decoration: none;
-    font-size: 12px;
-    color: #a8a8a8;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  footer .footer1-a:hover {
-    text-decoration: underline;
-  }
-  footer .footer2-a {
-    text-decoration: none;
-    font-size: 12px;
-    color: #a8a8a8;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  footer .footer2-a:hover {
-    text-decoration: underline;
-  }
-  footer p {
-    font-size: 12px;
-    color: #a8a8a8;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    text-align: center;
-  }
+footer {
+  background-color: #000000;
+  padding: 1rem 1rem;
 }
+footer .footer-pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+footer .footer1-a {
+  display: inline;
+  text-decoration: none;
+  font-size: 12px;
+  color: #a8a8a8;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+footer .footer1-a:hover {
+  text-decoration: underline;
+}
+footer .footer2-a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #a8a8a8;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+footer .footer2-a:hover {
+  text-decoration: underline;
+}
+footer p {
+  font-size: 12px;
+  color: #a8a8a8;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   footer {
     display: none;

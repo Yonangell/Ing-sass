@@ -1,6 +1,6 @@
 @use "./../utils/variables" as vars;
 
-@media only screen and (min-width: 768px) {
+
   footer {
     background-color: #000000;
     padding: 1rem 1rem;
@@ -43,7 +43,7 @@
       text-align: center;
     }
   }
-}
+
 
 @media only screen and (max-width: 768px) {
   footer {
