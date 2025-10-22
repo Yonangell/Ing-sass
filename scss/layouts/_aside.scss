@@ -24,9 +24,10 @@
   }
 
   .barra-lateral {
-    // display: inline-block;
-    justify-content: start;
-    align-items: start;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-start;
     background-color: #000000;
     border-right: 1.5px solid rgb(54, 54, 54, 1);
   }

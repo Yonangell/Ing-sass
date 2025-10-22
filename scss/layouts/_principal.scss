@@ -326,6 +326,8 @@
 @media only screen and (min-width: 768px) {
   .principal {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-bottom: none;
   }
 
