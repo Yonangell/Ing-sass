@@ -139,11 +139,11 @@ body {
     background-color: #000000;
     border-right: 1.5px solid rgb(54, 54, 54);
   }
-  .lateral {
+  .barra-lateral .lateral {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
   }
 }
 .principal {
@@ -733,8 +733,6 @@ body {
 }
 .seccion-principal {
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 .seccion-principal .imagen-seccion {
   display: grid;
