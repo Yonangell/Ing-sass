@@ -4,6 +4,9 @@
 
 @use "./components/button";
 
+@use "./utils/mixins";
+@use "./utils/variables";
+
 @use "./layouts/header";
 @use "./layouts/aside";
 @use "./layouts/principal";
