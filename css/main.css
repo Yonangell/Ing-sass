@@ -154,18 +154,30 @@ body {
   .publicacion-instagram {
     display: none;
   }
-  .lateral {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+  .barra-lateral {
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 10;
+    min-height: auto;
+  }
+  .lateral {
+    flex-direction: column;
+    align-items: flex-start;
+    visibility: visible;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .lateral .svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .lateral .svg-h4 {
     display: flex;
-    align-items: center;
-    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #f5f5f5;
     font-size: 12px;
