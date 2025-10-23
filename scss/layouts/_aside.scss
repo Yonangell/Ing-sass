@@ -30,7 +30,6 @@
     align-items: flex-start;
     background-color: #000000;
     border-right: 1.5px solid rgb(54, 54, 54, 1);
-    
   }
 
   .lateral {
@@ -44,5 +43,49 @@
   .svg-instagram {
     padding-top: 0.5rem;
     padding-bottom: 2rem;
+  }
+
+  .svg-h4 {
+    display: none;
+  }
+
+  .svg-insta {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .publicacion-instagram {
+    display: none;
+  }
+
+  
+    .lateral {
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    
+
+    .svg-h4 {
+      display: flex;
+      align-items: center;
+      text-align: right;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-size: 12px;
+      font-weight: vars.$font-weight;
+    }
+
+    .svg-insta {
+      display: flex;
+      font-family: vars.$font-stack;
+      color: vars.$secondary-color;
+      font-size: 20px;
+      font-weight: vars.$font-weight;
+      align-items: center;
+    }
   }
 }

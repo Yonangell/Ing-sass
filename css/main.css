@@ -143,6 +143,42 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 2rem;
   }
+  .svg-h4 {
+    display: none;
+  }
+  .svg-insta {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .publicacion-instagram {
+    display: none;
+  }
+  .lateral {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .lateral .svg-h4 {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #f5f5f5;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .lateral .svg-insta {
+    display: flex;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+  }
 }
 .principal {
   padding: 0 0;
@@ -158,12 +194,13 @@ body {
   padding: 1.5rem 0 1rem 1rem;
 }
 .div-logo .logo-header {
-  width: 77px;
-  height: 77px;
+  width: 87px;
+  height: 87px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 3px solid #fff;
+  border: 3px solid red;
   border-radius: 50%;
+  cursor: pointer;
 }
 .div-logo .flex-row {
   display: flex;
@@ -463,11 +500,12 @@ body {
     padding: 1.5rem 0 1rem 1rem;
   }
   .div-logo .logo-header {
-    width: 77px;
-    height: 77px;
+    width: 187px;
+    height: 187px;
     -o-object-fit: cover;
        object-fit: cover;
-    border: 3px solid #fff;
+    border: 3px solid red;
+    cursor: pointer;
     border-radius: 50%;
   }
   .div-logo .flex-row {

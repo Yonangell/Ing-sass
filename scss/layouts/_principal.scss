@@ -15,11 +15,12 @@
   padding: 1.5rem 0 1rem 1rem;
 
   .logo-header {
-    width: 77px;
-    height: 77px;
+    width: 87px;
+    height: 87px;
     object-fit: cover;
-    border: 3px solid #fff;
+    border: 3px solid red;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .flex-row {
@@ -346,10 +347,11 @@
     padding: 1.5rem 0 1rem 1rem;
 
     .logo-header {
-      width: 77px;
-      height: 77px;
+      width: 187px;
+      height: 187px;
       object-fit: cover;
-      border: 3px solid #fff;
+      border: 3px solid red;
+      cursor: pointer;
       border-radius: 50%;
     }
 
@@ -648,3 +650,7 @@
     }
   }
 }
+
+
+
+
