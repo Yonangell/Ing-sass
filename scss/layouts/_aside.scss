@@ -65,23 +65,22 @@
     top: 0;
     z-index: 10;
     min-height: auto;
+    padding-right: 4rem;
+    padding-left: 0.5rem;
   }
 
   .lateral {
     flex-direction: column;
-    // justify-content: flex-start;
     align-items: flex-start;
     visibility: visible;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1.2rem;
+  
 
     .svg {
-      // display: flex;
-      // align-items: center;
-      // text-align: center;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 1rem;
     }
 
     .svg-h4 {
@@ -91,7 +90,7 @@
       text-overflow: ellipsis;
       font-family: vars.$font-stack;
       color: vars.$secondary-color;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: vars.$font-weight;
     }
 
