@@ -2,21 +2,30 @@
 @use "./../utils/mixins" as mix;
 
 .seccion-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .imagen-seccion {
+    @include mix.flex-grid();
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.publicacion {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .seccion-principal {
     display: flex;
     width: 100%;
     height: 100%;
-    // padding: 0px 0px;
-    // margin: 0px 0px;
-    
-    
-    .imagen-seccion {
-        @include mix.flex-grid();
-        width: 100%;
-        height: 100%;
-    }
 
-    .seccion-imagen {
-        width: 200px;
-        height: 200px;
+    .imagen-seccion {
+      @include mix.flex-grid();
     }
+  }
 }

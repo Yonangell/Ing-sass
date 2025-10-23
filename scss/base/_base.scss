@@ -3,17 +3,5 @@ body {
   height: 100vh;
 }
 
-.principal,
-.envoltura {
-  min-height: 100%;
-  min-width: 100%;
-}
 
-@media only screen and (min-width: 768px) {
-  .principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-  }
-}
+
