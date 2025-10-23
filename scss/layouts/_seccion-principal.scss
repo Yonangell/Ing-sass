@@ -3,18 +3,19 @@
 
 .seccion-principal {
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
 
   .imagen-seccion {
     @include mix.flex-grid();
     width: 100%;
     height: 100%;
   }
+}
 
-  .seccion-imagen {
-    width: 200px;
-    height: 200px;
-  }
+.publicacion {
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -24,14 +25,7 @@
     height: 100%;
 
     .imagen-seccion {
-    @include mix.flex-grid();
-    
-  }
-
-  .seccion-imagen {
-    width: 200px;
-    height: 200px;
-  }
-
+      @include mix.flex-grid();
+    }
   }
 }
