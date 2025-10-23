@@ -126,7 +126,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #000000;
-    border-right: 1.5px solid rgb(54, 54, 54);
   }
   .lateral {
     display: flex;
@@ -428,7 +427,7 @@ body {
 .enla .perso {
   max-width: 193px;
 }
-.enla .nela-a {
+.enla .enla-a {
   text-decoration: none;
 }
 
@@ -719,7 +718,7 @@ body {
   .enla .perso {
     max-width: 193px;
   }
-  .enla .nela-a {
+  .enla .enla-a {
     text-decoration: none;
   }
 }
