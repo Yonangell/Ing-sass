@@ -1,49 +1,47 @@
 @use "./../utils/variables" as vars;
 
+footer {
+  background-color: #000000;
+  padding: 1rem 1rem;
 
-  footer {
-    background-color: #000000;
-    padding: 1rem 1rem;
+  .footer-pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
 
-    .footer-pie {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 0;
-    }
+  .footer1-a {
+    display: inline;
+    text-decoration: none;
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: vars.$font-stack;
 
-    .footer1-a {
-      display: inline;
-      text-decoration: none;
-      font-size: 12px;
-      color: #a8a8a8;
-      font-family: vars.$font-stack;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .footer2-a {
-      text-decoration: none;
-      font-size: 12px;
-      color: #a8a8a8;
-      font-family: vars.$font-stack;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    p {
-      font-size: 12px;
-      color: #a8a8a8;
-      font-family: vars.$font-stack;
-      text-align: center;
+    &:hover {
+      text-decoration: underline;
     }
   }
 
+  .footer2-a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: vars.$font-stack;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    color: #a8a8a8;
+    font-family: vars.$font-stack;
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   footer {
