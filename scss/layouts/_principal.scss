@@ -142,7 +142,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
   position: relative;
   gap: 0.2rem;
   padding-bottom: 1rem;
@@ -172,7 +171,6 @@
   .condi {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
 
     .img {

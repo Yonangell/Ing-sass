@@ -330,7 +330,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
   position: relative;
   gap: 0.2rem;
   padding-bottom: 1rem;
