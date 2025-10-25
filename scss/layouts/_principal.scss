@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: vars.$gap-size;
 
     .titulo-d {
@@ -340,7 +340,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: vars.$gap-size;
     padding: 1.5rem 0 1rem 1rem;
 
@@ -359,6 +359,13 @@
       align-items: center;
       justify-content: center;
       gap: vars.$gap-size;
+
+      .online {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
 
       .titulo-d {
         color: vars.$secondary-color;
@@ -648,7 +655,3 @@
     }
   }
 }
-
-
-
-
